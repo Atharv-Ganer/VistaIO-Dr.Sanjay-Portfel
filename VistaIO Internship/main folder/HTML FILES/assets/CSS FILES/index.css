@@ -496,5 +496,5 @@ li{
 }
 
 .next-btn:hover{
-    background: -webkit-radial-gradient(right, #db8009, #2196F3);
+    background: -webkit-radial-gradient(left, #2196F3, #db8009);
 }
