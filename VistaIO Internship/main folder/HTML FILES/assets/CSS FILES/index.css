@@ -42,7 +42,7 @@
 
 .services-container{
     position: relative;
-    margin-top: 250px; /* Adjust margin to create space below the navigation bar */
+    margin-top: 80px; /* Adjust margin to create space below the navigation bar */
     margin-left: auto; /* Align to the center horizontally */
     margin-right: auto; /* Align to the center horizontally */
     width: 80%; /* Set width to a percentage for responsiveness */
@@ -233,14 +233,23 @@ li{
   }
 
 
-.slogan{
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+.slogan {
+    position: absolute;
+    left: 10%; /* Adjust left position */
+    top: 50%; /* Align the text to the vertical center */
+    transform: translateY(-50%); /* Center the text vertically */
+    width: 40%; /* Set width for responsiveness */
     font-size: 30px;
-    margin-left: 250px;
-    width: 500px;
     color: rgb(19, 28, 36);
+    text-align: left; /* Align text to the left */
+    margin-left: -200px;
+}
+
+.contact-email-bg{
+    width: 1800px;
+    height: 400px;
+    opacity: 0%;
+    margin-left: -275px;
 }
 
 .pera1{
@@ -249,19 +258,28 @@ li{
 }
 
 .contact-email{
-    display: flex;
-    flex-direction: row;
-    font-size: 35px;
-    margin-right: 500px;
-    margin-top: 250px;
+    position: relative;
+    margin-top: 100px; /* Adjust margin to create space below the navigation bar */
+    margin-left: auto; /* Align to the center horizontally */
+    margin-right: auto; /* Align to the center horizontally */
+    width: 80%; /* Set width to a percentage for responsiveness */
+    max-width: 1200px; /* Set a maximum width to prevent overflowing */
+    padding-right: 40px; /* Shift the image towards the left */
+    /* Remaining styles */
+    height: 400px;
+    opacity: 80%;
 }
 
 .ask-que{
-    flex: 1;
-    margin-left: 100px;
-    margin-top: -20px;
-    margin-right: -350px;
+    position: absolute;
+    right: 10%; /* Adjust right position */
+    top: 50%; /* Align the text to the vertical center */
+    transform: translateY(-50%); /* Center the text vertically */
+    width: 40%; /* Set width for responsiveness */
+    font-size: 25px;
     color: rgb(30, 18, 18);
+    text-align: right; /* Align text to the right */
+    margin-right: -150px;
 
 }
 
@@ -497,4 +515,17 @@ li{
 
 .next-btn:hover{
     background: -webkit-radial-gradient(left, #2196F3, #db8009);
+}
+
+.footer{
+    height: 200px;
+    width: 200px;
+}
+
+.footer-bg{
+    width: 1800px;
+    height: 600px;
+    margin-left: 53px;
+    margin-top: 200px ;
+    
 }
