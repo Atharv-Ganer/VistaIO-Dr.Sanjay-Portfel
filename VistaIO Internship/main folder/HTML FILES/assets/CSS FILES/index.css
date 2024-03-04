@@ -4,7 +4,7 @@
   }
 
 .nav-bar{
-    position: fixed; /* Stick the navigation bar */
+    position: relative; /* Stick the navigation bar */
     top: 0; /* Align it to the top of the viewport */
     width: 90%; /* Make it span the full width */
     z-index: 1000; /* Ensure it appears above other content */
@@ -16,6 +16,9 @@
     font-weight: bold;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(255, 255, 255);
+    max-width: 1700px; /* Set a maximum width to prevent overflowing */
+    margin-left: auto; /* Align to the center horizontally */
+    margin-right: auto; /* Align to the center horizontally */
 }
 
 .image-container {
