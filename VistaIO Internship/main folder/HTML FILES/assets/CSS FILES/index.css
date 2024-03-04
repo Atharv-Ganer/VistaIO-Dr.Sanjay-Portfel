@@ -470,6 +470,15 @@ li{
     margin-left: 800px;
     height: 100px;
     width: 40px;
+    background-color: #2196F3;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: #db8009;
+    
+}
+
+.prev-btn:hover{
+    background: -webkit-radial-gradient(right, #2196F3, #db8009);
 }
 
 .next-btn {
@@ -480,4 +489,12 @@ li{
     transform: rotate(-90deg);
     margin-left: 800px;
     margin-bottom: -20px;
+    background-color: #2196F3;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: #db8009;
+}
+
+.next-btn:hover{
+    background: -webkit-radial-gradient(right, #db8009, #2196F3);
 }
