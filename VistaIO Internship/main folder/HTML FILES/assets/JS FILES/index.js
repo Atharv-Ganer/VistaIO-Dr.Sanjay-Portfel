@@ -54,26 +54,3 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 });
-
-
-// scroll to top btn
-// Create a button element
-var button = document.createElement("button");
-
-// Add a class to the button for styling
-button.classList.add("scroll-to-top-button");
-
-// Add text content to the button
-button.textContent = "↑";
-
-// Append the button to the body of the document
-document.body.appendChild(button);
-
-// Add event listener to the button
-button.addEventListener("click", function() {
-    // Smooth scroll to the top of the page
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-});

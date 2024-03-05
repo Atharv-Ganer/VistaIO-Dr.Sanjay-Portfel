@@ -553,6 +553,10 @@ li{
 
 .footer-mail{
     font-size: 40px;
+    background: linear-gradient(to right, #419ff7, 
+                    #f1a415); 
+            -webkit-text-fill-color: transparent; 
+            -webkit-background-clip: text; 
 }
 
 .footer-addr{
