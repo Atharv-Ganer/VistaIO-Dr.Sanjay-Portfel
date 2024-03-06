@@ -245,7 +245,7 @@ li{
     transform: translateY(-50%); /* Center the text vertically */
     width: 40%; /* Set width for responsiveness */
     font-size: 30px;
-    color: rgb(19, 28, 36);
+    color: rgb(5, 16, 26);
     text-align: left; /* Align text to the left */
     margin-left: -200px;
 }
@@ -253,7 +253,7 @@ li{
 .contact-email-bg{
     width: 1800px;
     height: 400px;
-    opacity: 0%;
+    opacity: 0.1%;
     margin-left: -275px;
 }
 
@@ -525,7 +525,7 @@ li{
 .footer{
     width: 2000px; /* Set the width to match the width of footer-bg */
     height: auto; /* Let the height adjust proportionally */
-    margin-top: 50px; /* Adjust as needed to place it below the previous content */
+    margin-top: 0px; /* Adjust as needed to place it below the previous content */
     margin-left: auto; /* Align to the center horizontally */
     margin-right: auto; /* Align to the center horizontally */
     display: flex; /* Use flexbox to center vertically */
