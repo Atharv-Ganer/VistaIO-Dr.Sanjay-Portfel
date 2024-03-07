@@ -1,0 +1,30 @@
+/*for ask-que scrilling*/
+.ask-que{
+    animation-name: fade-in-right-ask-que;
+    animation-duration: 7s;
+}
+
+@keyframes fade-in-right-ask-que {
+    from {
+        transform: translateX(100%) translateY(-50%); /* Start from the right side */
+    }
+    to {
+        transform: translateX(0) translateY(-50%); /* Move to original position */
+    }
+}
+
+
+/*for slogan scrilling*/
+.slogan{
+    animation-name: fade-in-left-slogan;
+    animation-duration: 7s;
+}
+
+@keyframes fade-in-left-slogan {
+    from {
+        transform: translateX(-100%) translateY(-50%); /* Start from the left side */
+    }
+    to {
+        transform: translateX(0) translateY(-50%); /* Move to original position */
+    }
+}

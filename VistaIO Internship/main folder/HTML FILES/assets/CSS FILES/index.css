@@ -282,18 +282,10 @@ li{
     color: rgb(5, 16, 26);
     text-align: left; /* Align text to the left */
     margin-left: -200px;
-    animation-name: fade-in-left-slogan;
-    animation-duration: 7s;
+    
 }
 
-@keyframes fade-in-left-slogan {
-    from {
-        transform: translateX(-100%) translateY(-50%); /* Start from the left side */
-    }
-    to {
-        transform: translateX(0) translateY(-50%); /* Move to original position */
-    }
-}
+
 
 .contact-email-bg{
     width: 1800px;
@@ -330,18 +322,7 @@ li{
     color: rgb(30, 18, 18);
     text-align: left; /* Align text to the right */
     margin-right: -150px;
-    animation-name: fade-in-right-ask-que;
-    animation-duration: 7s;
 
-}
-
-@keyframes fade-in-right-ask-que {
-    from {
-        transform: translateX(100%) translateY(-50%); /* Start from the right side */
-    }
-    to {
-        transform: translateX(0) translateY(-50%); /* Move to original position */
-    }
 }
 
 .email-head{
