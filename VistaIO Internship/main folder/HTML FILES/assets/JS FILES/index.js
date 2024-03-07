@@ -54,3 +54,27 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const loadingScreen = document.getElementById('loading-screen');
+  const imageContainer = document.querySelector('.image-container');
+
+  // Hide the image container initially
+  imageContainer.style.visibility = 'hidden';
+
+  // Show loading screen initially
+  loadingScreen.style.display = 'flex';
+
+  // Set timeout to hide loading screen after 4 seconds
+  setTimeout(function() {
+      loadingScreen.style.display = 'none'; // Hide the loading screen
+      imageContainer.style.visibility = 'visible'; // Reveal the image container
+
+      // Allow scrolling after loading
+      document.body.style.overflow = 'visible';
+
+      // Add class to trigger scrolling animation after loading
+      imageContainer.classList.add('animate-on-load');
+  }, 4000); // 4 seconds delay
+});
+

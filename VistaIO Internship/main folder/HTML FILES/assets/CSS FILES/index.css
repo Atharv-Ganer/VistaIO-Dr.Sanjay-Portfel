@@ -3,6 +3,40 @@
     text-decoration: none;
   }
 
+/* CSS for loading screen */
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure it appears above other content */
+}
+
+.loading-content {
+    text-align: center;
+    font-size: 30px;
+    animation: flash 1s infinite alternate; /* Flashing animation */
+}
+
+@keyframes flash {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Hide website content during loading */
+body {
+    overflow: hidden;
+}
+
 
 
 .nav-bar{
@@ -102,14 +136,14 @@ li{
 
 .info-bg-header {
     position: absolute;
-    top: 30%; /* Adjust the top position */
+    top: 13%; /* Adjust the top position */
     transform: translateX(-50%);
     color: #db8009;
     padding: 10px 20px;
     font-size: 33px;
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    animation-duration: .4s;
+    animation-duration: 5.9s;
     animation-name: float-in-bottom-top;
 }    
 
@@ -126,12 +160,12 @@ li{
 
 .info-bg-name{
     position: absolute;
-    top: 40%; /* Adjust the top position */
+    top: 22%; /* Adjust the top position */
     transform: translateX(-50%);
     padding: 10px 20px;
     font-size: 65px;
     text-align: left;
-    animation-duration: .6s;
+    animation-duration: 6.5s;
     animation-name: float-in-bottom-top;
     color: rgb(143, 199, 248);
 }
@@ -148,14 +182,14 @@ li{
 
 .info-bg-info{
     position: absolute;
-    top: 60%; /* Adjust the top position */
+    top: 45%; /* Adjust the top position */
     left: 28%;
     transform: translateX(-50%);
     padding: 10px 20px;
     font-size: 30px;
     text-align: left;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    animation-duration: .8s;
+    animation-duration: 5.8s;
     animation-name: float-in-bottom-top;
     color: rgb(0, 255, 255);
 }
@@ -163,7 +197,7 @@ li{
 
 .LM-button{
     position: absolute;
-    top: 90%; /* Adjust the top position */
+    top: 79%; /* Adjust the top position */
     left: 10%; /* Adjust the left position */
     transform: translate(-50%, -50%);
     color: aqua;
@@ -180,7 +214,7 @@ li{
     background-size: 200% 100%;
     background-position: right bottom;
     transition: all .5s ease-out;
-    animation-duration: .6s;
+    animation-duration: 5.6s;
     animation-name: fade-in-left;
 }
 
@@ -201,7 +235,7 @@ li{
 
 .HM-button{
     position: absolute;
-    top: 90%; /* Adjust the top position */
+    top: 79%; /* Adjust the top position */
     left: 28%; /* Adjust the left position */
     transform: translate(-50%, -50%);
     padding-left: 50px;
@@ -217,7 +251,7 @@ li{
     border-color: #2196F3;
     cursor: pointer;
     transition: all .5s ease-out;
-    animation-duration: 1s;
+    animation-duration: 6s;
     animation-name: fade-in-right;
     color: #0fbbff;
 }
@@ -248,6 +282,17 @@ li{
     color: rgb(5, 16, 26);
     text-align: left; /* Align text to the left */
     margin-left: -200px;
+    animation-name: fade-in-left-slogan;
+    animation-duration: 7s;
+}
+
+@keyframes fade-in-left-slogan {
+    from {
+        transform: translateX(-100%) translateY(-50%); /* Start from the left side */
+    }
+    to {
+        transform: translateX(0) translateY(-50%); /* Move to original position */
+    }
 }
 
 .contact-email-bg{
@@ -272,7 +317,7 @@ li{
     padding-right: 40px; /* Shift the image towards the left */
     /* Remaining styles */
     height: 400px;
-    opacity: 80%;
+    opacity: 100%;
 }
 
 .ask-que{
@@ -285,7 +330,18 @@ li{
     color: rgb(30, 18, 18);
     text-align: left; /* Align text to the right */
     margin-right: -150px;
+    animation-name: fade-in-right-ask-que;
+    animation-duration: 7s;
 
+}
+
+@keyframes fade-in-right-ask-que {
+    from {
+        transform: translateX(100%) translateY(-50%); /* Start from the right side */
+    }
+    to {
+        transform: translateX(0) translateY(-50%); /* Move to original position */
+    }
 }
 
 .email-head{
