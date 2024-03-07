@@ -37,8 +37,6 @@ body {
     overflow: hidden;
 }
 
-
-
 .nav-bar{
     position: relative; /* Stick the navigation bar */
     top: 0; /* Align it to the top of the viewport */
@@ -124,6 +122,25 @@ li{
     margin-left: 42px;
     border-radius: 10px;
     opacity: 100%;
+}
+
+.gears{
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    top: 5%;
+    left: -35%;
+    animation-name: float-in-top-position;
+    animation-duration: 7.5s;
+}
+
+@keyframes float-in-top-position {
+    from {
+        top: -50%; /* Move the element off the screen from the top */
+    }
+    to {
+        top: 5%; /* Move the element to its original position */
+    }
 }
 
 .service-bg{
