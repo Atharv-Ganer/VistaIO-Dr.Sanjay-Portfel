@@ -157,9 +157,10 @@ li{
     transform: translateX(-50%);
     color: #db8009;
     padding: 10px 20px;
-    font-size: 33px;
+    margin-left: 400px;
+    font-size: 30px;
     text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Kode Mono", monospace;
     animation-duration: 5.9s;
     animation-name: float-in-bottom-top;
 }    
@@ -180,8 +181,11 @@ li{
     top: 22%; /* Adjust the top position */
     transform: translateX(-50%);
     padding: 10px 20px;
+    font-family: "Sawarabi Mincho", serif;
     font-size: 65px;
+    font-weight: 400;
     text-align: left;
+    margin-left: 200px;
     animation-duration: 6.5s;
     animation-name: float-in-bottom-top;
     color: rgb(143, 199, 248);
@@ -189,10 +193,11 @@ li{
 
 .service-bg-text{
     position: absolute; /* Position the text absolutely relative to the container */
-    top: 5%;
+    top: 2%;
     transform: translateX(-50%);
     padding: 10px 20px;
-    font-size: 65px;
+    font-family: "Sawarabi Mincho", serif;
+    font-size: 60px;
     text-align: left;
     margin-left: -300px;
 }
@@ -203,9 +208,10 @@ li{
     left: 28%;
     transform: translateX(-50%);
     padding: 10px 20px;
+    margin-left: 35px;
     font-size: 30px;
     text-align: left;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Exo 2", sans-serif;
     animation-duration: 5.8s;
     animation-name: float-in-bottom-top;
     color: rgb(0, 255, 255);
@@ -295,6 +301,7 @@ li{
     top: 50%; /* Align the text to the vertical center */
     transform: translateY(-50%); /* Center the text vertically */
     width: 40%; /* Set width for responsiveness */
+    font-family: "Sawarabi Mincho", serif;
     font-size: 30px;
     color: rgb(5, 16, 26);
     text-align: left; /* Align text to the left */
@@ -312,7 +319,7 @@ li{
 }
 
 .pera1{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Exo 2", sans-serif;
     font-size: 20px ;
 }
 
@@ -336,14 +343,14 @@ li{
     transform: translateY(-50%); /* Center the text vertically */
     width: 40%; /* Set width for responsiveness */
     font-size: 25px;
+    font-family: "Sawarabi Mincho", serif;
     color: rgb(30, 18, 18);
     text-align: left; /* Align text to the right */
     margin-right: -150px;
-
 }
 
 .email-head{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Exo 2", sans-serif;
     font-size: 25px;
 
 }
@@ -357,7 +364,7 @@ li{
 
 .service-buttons{
     position: absolute;
-    top: 100%; /* Adjust top position */
+    top: 105%; /* Adjust top position */
     left: 33%; /* Adjust left position */
     transform: translate(-50%, -50%);
     display: flex; /* Use flexbox to arrange buttons horizontally */
@@ -438,14 +445,14 @@ li{
 
 .button-1 h3, .button-2 h3 {
     font-size: 35px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Sawarabi Mincho", serif;
 }
 .button-3 h3{
     font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Sawarabi Mincho", serif;
 }
 .button-1 p, .button-2 p, .button-3 p{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-family: "Exo 2", sans-serif;
     font-size: 25px;
     padding-bottom: 35px;
     padding-left: 20px;
@@ -481,10 +488,11 @@ li{
 .con-img-text{
     position: absolute; /* Position the text absolutely relative to the container */
     padding: 10px 20px;
+    font-family: "Sawarabi Mincho", serif;
     font-size: 65px;
     text-align: left;  
     margin-left: -800px;
-    top: 60%;
+    top: 58%;
 }
 
 .custom-dropdown {
@@ -612,6 +620,7 @@ li{
 }
 
 .footer-mail{
+    font-family: "Sawarabi Mincho", serif;
     font-size: 40px;
     background: linear-gradient(to right, #419ff7, 
                     #f1a415); 
@@ -620,5 +629,7 @@ li{
 }
 
 .footer-addr{
+    font-family: "Exo 2", sans-serif;
     font-size: 25px;
+    color: #10b0f0;
 }
