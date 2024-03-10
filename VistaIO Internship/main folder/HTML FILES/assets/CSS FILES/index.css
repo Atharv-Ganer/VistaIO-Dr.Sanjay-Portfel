@@ -382,6 +382,7 @@ li{
     background-color: transparent; /* Set background to transparent */
     overflow: hidden; /* Hide overflow */
     width: 350px;
+    cursor: pointer;
 }
 .button-2{
     position: relative;
@@ -394,6 +395,7 @@ li{
     background-color: transparent; /* Set background to transparent */
     overflow: hidden; /* Hide overflow */
     width: 350px;
+    cursor: pointer;
 }
 .button-3{
     position: relative;
@@ -406,6 +408,7 @@ li{
     background-color: transparent; /* Set background to transparent */
     overflow: hidden; /* Hide overflow */
     width: 350px;
+    cursor: pointer;
 }
 
 .button-1::after, .button-2::after, .button-3::after {

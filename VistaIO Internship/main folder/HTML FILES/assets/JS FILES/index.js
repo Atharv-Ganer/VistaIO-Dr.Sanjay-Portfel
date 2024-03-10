@@ -38,10 +38,15 @@ document.addEventListener("DOMContentLoaded", function() {
     window.open('https://mail.google.com/mail/?view=cm&fs=1&to=sanjaychhalotre@gmail.com', '_blank'); // Open Gmail compose window with a specific email address
   });
 
+  // function to open WhatsApp chat
+  optionButtons[1].addEventListener('click', function(){
+    window.open('https://wa.me/918871255695', '_blank');
+  });
+
   // Function to open LinkedIn profile
-  function openLinkedInProfile() {
+  optionButtons[3].addEventListener('click', function(){
     window.open('https://www.linkedin.com/in/sanjay-chhalotre-phd-40644979/', '_blank'); // Replace 'yourlinkedinprofile' with the LinkedIn profile URL you want to open
-  }
+  });
 
   // Event listeners for hovering over each option
   optionButtons.forEach((button, index) => {
