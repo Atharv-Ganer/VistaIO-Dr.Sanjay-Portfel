@@ -500,7 +500,6 @@ li{
 
 .custom-dropdown {
     position: absolute;
-    
     margin-right: 20px;
     
   }
@@ -611,7 +610,6 @@ li{
     left: 50%; /* Move to the center horizontally */
     transform: translateX(-50%); /* Center horizontally */
     top: 3400px; /* Adjust as needed */
-
 }
 
 .footer-text{
@@ -677,10 +675,9 @@ li{
     /* For info bg */
 
     .info-bg {
-        width: 700px;
+        width: 455px;
         height: 400px;
-        margin-left: 42px;
-        border-radius: 10px;
+        margin-left: 40px;
         opacity: 100%;
         margin-top: -550px;
     }
@@ -739,16 +736,13 @@ li{
     /* for class contact-email */
 
     .contact-email-bg{
-        width: 1800px;
-        height: 400px;
-        opacity: 0.1%;
-        margin-left: -275px;
+     width: 445px;
     }
 
     .slogan {
         left: 50%; /* Adjust left position */
-        top: -110%; /* Align the text to the vertical center */
-        width: 100%; /* Set width for responsiveness */
+        top: -500px; /* Align the text to the vertical center */
+        width: 390px; /* Set width for responsiveness */
         font-size: 20px;
         text-align: left; /* Align text to the left */
         margin-left: -200px;
@@ -760,9 +754,9 @@ li{
     }
 
     .ask-que{
-        left: -2%; /* Adjust right position */
+        left: -3%; /* Adjust right position */
         top: -40%; /* Align the text to the vertical center */
-        width: 100%; /* Set width for responsiveness */
+        width: 370px; /* Set width for responsiveness */
         font-size: 20px;
     }
 
@@ -772,5 +766,182 @@ li{
 
     .e-mail{
         font-size: 35px;
+    }
+
+    /* for Services */
+
+    .services-container{
+        position: relative;
+        margin-top: -10px; /* Adjust margin to create space below the navigation bar */
+        margin-left: auto; /* Align to the center horizontally */
+        margin-right: auto; /* Align to the center horizontally */
+        width: 360px; /* Set width to a percentage for responsiveness */
+        padding-right: 40px; /* Shift the image towards the left */
+        /* Remaining styles */
+        height: 2000px;
+        border-radius: 10px;
+        opacity: 80%;
+        text-align: center; /* Center the content inside the container */
+        display: flex; /* Use flexbox to center vertically */
+        justify-content: center; /* Center the content horizontally */
+        align-items: center; /* Center the content vertically */
+        flex-direction: column; /* Arrange content vertically */
+    }
+
+    .service-buttons {
+        position: relative; /* Change position to relative */
+        top: auto; /* Reset top position */
+        left: auto; /* Reset left position */
+        transform: none; /* Reset transform */
+        flex-direction: column; /* Arrange buttons vertically */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .button-1, .button-2, .button-3 {
+        position: relative; /* Change position to relative */
+        top: -750px; /* Reset top position */
+        left: 20px; /* Reset left position */
+        transform: none; /* Reset transform */
+        margin-bottom: 20px; /* Add margin between buttons */
+    }
+
+    .button-1 img, .button-2 img {
+        margin-top: 20px;
+        padding-bottom: 25px;
+        width: 55px;
+        height: 40px;
+    }
+
+    .button-3 img{
+        margin-top: 20px;
+        padding-bottom: 25px;
+        width: 55px;
+        height: 50px;
+    }
+
+    .button-1 h3, .button-2 h3 {
+        font-size: 15px;
+    }
+    .button-3 h3{
+        font-size: 15px;
+    }
+
+    .button-1 p, .button-2 p, .button-3 p{
+        font-size: 15px;
+        padding-bottom: 15px;
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+
+    .service-bg-text{
+        position: absolute; /* Position the text absolutely relative to the container */
+        top: -250px;
+        font-family: "Sawarabi Mincho", serif;
+        font-size: 25px;
+        text-align: center;
+        margin-left: 290px;
+        width: 200px;
+    }
+
+    .service-bg{
+        width: 450px;
+        height: 1000px;
+        margin-left: 42px;
+        opacity: 40%;
+        margin-top: -900px;
+    }
+
+    /* for Contact Mesage */
+
+    .contact-message img{
+        width: 445px;
+        height: 600px;
+        margin-left: 44px;
+        border-radius: 10px;
+        margin-top: -1700px;
+    }
+
+    .con-img-text{
+        position: absolute; /* Position the text absolutely relative to the container */
+        padding: 10px 20px;
+        font-family: "Sawarabi Mincho", serif;
+        font-size: 30px;
+        text-align: left;  
+        margin-left: 37px;
+        top: -1100px;
+    }
+
+    .options {
+        position: relative;
+        top: -15px;
+        left: -15%;
+        transform: translateX(-50%);
+        margin-top: 20px; /* Adjust as needed */
+        width: 180px;
+    }
+    
+    .option {
+        width: 180px;
+        text-align: left;
+        padding: 8px 0;
+        border: none;
+        background: none;
+        cursor: pointer;
+        margin-bottom: 5px;
+        transition: background-color 0.8s ease;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 30px;
+        color: white;
+    }
+    .option img{
+        width: 30px;
+        height: 30px;
+        margin-top: 0px;
+        margin-left: 0px;
+        padding-right: 5px;
+    }
+
+    .prev-btn {
+        margin-top: -900px;
+        margin-left: 390px;
+        height: 100px;
+        width: 40px;
+    }
+    
+    .next-btn {
+        margin-left: 390px;
+        margin-bottom: -20px;
+    }
+
+    /* for Footer */
+
+    .footer-bg{
+        width: 450px; /* Set the width to match the width of the container */
+        height: 610px; /* Let the height adjust proportionally */
+        opacity: 100%;
+        margin-left: -11px;
+        margin-top: -500px;
+    }
+
+    .footer-logo {
+        left: 50%; /* Move to the center horizontally */
+        top: 3200px; /* Adjust as needed */
+    }
+
+    .footer-text{
+        left: 48%; /* Move to the center horizontally */
+        top: 3280px; /* Adjust as needed */
+    }
+
+    .footer-mail{
+        font-size: 30px;
+    }
+
+    .footer-addr{
+        font-size: 19px;
+    }
+
+    .footer{
+        width: 445px; /* Set the width to match the width of footer-bg */
     }
 }
