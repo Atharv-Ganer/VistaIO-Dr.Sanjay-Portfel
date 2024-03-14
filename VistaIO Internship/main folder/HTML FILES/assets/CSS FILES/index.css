@@ -914,10 +914,12 @@ li{
 
     .footer-mail{
         font-size: 30px;
+        margin-left: 19px;
     }
 
     .footer-addr{
         font-size: 19px;
+        margin-left: 19px;
     }
 
     .footer{
