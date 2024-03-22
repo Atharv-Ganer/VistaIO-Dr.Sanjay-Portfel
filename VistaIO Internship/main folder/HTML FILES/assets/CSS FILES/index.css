@@ -135,6 +135,14 @@ li{
     animation-duration: 7.5s;
 }
 
+.info-bg-photo{
+    position: absolute;
+    width: 700px;
+    height: 800px;
+    top: 20%;
+    right: -19%;
+}
+
 @keyframes float-in-top-position {
     from {
         top: -50%; /* Move the element off the screen from the top */
@@ -671,7 +679,7 @@ li{
     /* For info bg */
 
     .info-bg {
-        width: 460px;
+        width: 470px;
         height: 400px;
         margin-left: 48px;
         opacity: 100%;
@@ -680,6 +688,14 @@ li{
     
     .gears{
         display: none;
+    }
+
+    .info-bg-photo{
+        position: absolute;
+        width: 200px;
+        height: 300px;
+        top: 12.5%;
+        right: -10%;
     }
 
     .info-bg-header {
@@ -767,7 +783,7 @@ li{
 
     .services-container{
         margin-top: -0px; /* Adjust margin to create space below the navigation bar */
-        width: 355px; /* Set width to a percentage for responsiveness */
+        width: 365px; /* Set width to a percentage for responsiveness */
         padding-right: 40px; /* Shift the image towards the left */
         height: 2000px;
     }
@@ -825,7 +841,7 @@ li{
     }
 
     .service-bg{
-        width: 465px;
+        width: 470px;
         height: 1000px;
         margin-left: 42px;
         opacity: 40%;
@@ -835,7 +851,7 @@ li{
     /* for Contact Mesage */
 
     .contact-message img{
-        width: 455px;
+        width: 470px;
         height: 600px;
         margin-left: 44px;
         border-radius: 10px;
@@ -893,7 +909,7 @@ li{
     /* for Footer */
 
     .footer-bg{
-        width: 460px; /* Set the width to match the width of the container */
+        width: 470px; /* Set the width to match the width of the container */
         height: 610px; /* Let the height adjust proportionally */
         opacity: 100%;
         margin-left: -7px;
@@ -975,6 +991,14 @@ li{
         left: -14%;
         animation-name: float-in-top-position;
         animation-duration: 7.5s;
+    }
+
+    .info-bg-photo{
+        position: absolute;
+        width: 250px;
+        height: 350px;
+        top: 7.5%;
+        right: -10%;
     }
 
     .info-bg-header {
