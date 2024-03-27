@@ -606,9 +606,10 @@ li{
 /* For Footer */
 
 .footer{
+    position: relative;
     width: 1912px; /* Set the width to match the width of footer-bg */
     height: auto; /* Let the height adjust proportionally */
-    margin-top: 0px; /* Adjust as needed to place it below the previous content */
+    margin-top: 304px; /* Adjust as needed to place it below the previous content */
     margin-left: auto; /* Align to the center horizontally */
     margin-right: auto; /* Align to the center horizontally */
     display: flex; /* Use flexbox to center vertically */
@@ -617,24 +618,25 @@ li{
 }
 
 .footer-bg{
-    width: 2000px; /* Set the width to match the width of the container */
+    position: absolute;
+    width: 1922px; /* Set the width to match the width of the container */
     height: 600px; /* Let the height adjust proportionally */
     opacity: 100%;
-    margin-left: -20px;
+    margin-left: -10px;
 }
 
 .footer-logo {
     position: absolute;
     left: 50%; /* Move to the center horizontally */
     transform: translateX(-50%); /* Center horizontally */
-    top: 3400px; /* Adjust as needed */
+    top: -280px; /* Adjust as needed */
 }
 
 .footer-text{
     position: absolute;
     left: 50%; /* Move to the center horizontally */
     transform: translateX(-50%); /* Center horizontally */
-    top: 3500px; /* Adjust as needed */
+    top: -210px; /* Adjust as needed */
     text-align: center;
 }
 
@@ -651,6 +653,152 @@ li{
     font-family: "Exo 2", sans-serif;
     font-size: 25px;
     color: #10b0f0;
+}
+
+.button-container{
+    position: absolute;
+    left: 5%;
+    top: 10px;
+    
+}
+
+.button-container button{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    padding-right: 48px;
+    background-color: #d1b159;
+    border-radius: 10px;
+    border: none;
+}
+
+.instagram{
+    width: 45px;
+    height: 45px;
+    margin-top: 2px;
+}
+
+.linkedin{
+    width: 45px;
+    height: 45px;
+    margin-top: 2px;
+}
+
+.facebook{
+    width: 45px;
+    height: 45px;
+}
+
+.twitter{
+    width: 45px;
+    height: 45px;
+    margin-top: 2px;
+}
+
+.instagram-button::after {
+    content: "Instagram"; /* Show text "Instagram" */
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 10px); /* Adjust distance from button as needed */
+    transform: translateY(-50%);
+    background-color: #e4b63a; /* Adjust opacity and color as needed */
+    padding: 5px 10px; /* Adjust as needed */
+    border-radius: 5px; /* Adjust as needed */
+    font-family: Arial, sans-serif; /* Adjust font family as needed */
+    font-size: 14px; /* Adjust font size as needed */
+    color: #333; /* Adjust text color as needed */
+    z-index: 1;
+    white-space: nowrap; /* Prevent text from wrapping */
+    font-family: "Sawarabi Mincho", serif;
+    font-weight: bold;
+    font-size: 22px;
+    color: #080707;
+    opacity: 0; /* Initially hide the text */
+    transition: opacity 0.5s ease; /* Smooth transition effect over 1 second */
+}
+
+.instagram-button:hover::after {
+    opacity: 1; /* Show the text on hover */
+}
+
+.linkedin-button::after {
+    content: "LinkedIn";
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 10px); /* Adjust distance from button as needed */
+    transform: translateY(-50%);
+    background-color: #e4b63a; /* Adjust opacity and color as needed */
+    padding: 5px 10px; /* Adjust as needed */
+    border-radius: 5px; /* Adjust as needed */
+    font-family: Arial, sans-serif; /* Adjust font family as needed */
+    font-size: 14px; /* Adjust font size as needed */
+    color: #333; /* Adjust text color as needed */
+    z-index: 1;
+    white-space: nowrap; /* Prevent text from wrapping */
+    font-family: "Sawarabi Mincho", serif;
+    font-weight: bold;
+    font-size: 22px;
+    color: #080707;
+    opacity: 0; /* Initially hide the text */
+    transition: opacity 0.5s ease; /* Smooth transition effect over 1 second */
+}
+
+.linkedin-button:hover::after {
+    opacity: 1; /* Show the text on hover */
+}
+
+.facebook-button::after {
+    content: "Facebook";
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 10px); /* Adjust distance from button as needed */
+    transform: translateY(-50%);
+    background-color: #e4b63a; /* Adjust opacity and color as needed */
+    padding: 5px 10px; /* Adjust as needed */
+    border-radius: 5px; /* Adjust as needed */
+    font-family: Arial, sans-serif; /* Adjust font family as needed */
+    font-size: 14px; /* Adjust font size as needed */
+    color: #333; /* Adjust text color as needed */
+    z-index: 1;
+    white-space: nowrap; /* Prevent text from wrapping */
+    font-family: "Sawarabi Mincho", serif;
+    font-weight: bold;
+    font-size: 22px;
+    color: #080707;
+    opacity: 0; /* Initially hide the text */
+    transition: opacity 0.5s ease; /* Smooth transition effect over 1 second */
+}
+
+.facebook-button:hover::after {
+    opacity: 1; /* Show the text on hover */
+}
+
+.twitter-button::after {
+    content: "Twitter";
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 10px); /* Adjust distance from button as needed */
+    transform: translateY(-50%);
+    background-color: #e4b63a; /* Adjust opacity and color as needed */
+    padding: 5px 10px; /* Adjust as needed */
+    border-radius: 5px; /* Adjust as needed */
+    font-family: Arial, sans-serif; /* Adjust font family as needed */
+    font-size: 14px; /* Adjust font size as needed */
+    color: #333; /* Adjust text color as needed */
+    z-index: 1;
+    white-space: nowrap; /* Prevent text from wrapping */
+    font-family: "Sawarabi Mincho", serif;
+    font-weight: bold;
+    font-size: 22px;
+    color: #080707;
+    opacity: 0; /* Initially hide the text */
+    transition: opacity 0.5s ease; /* Smooth transition effect over 1 second */
+}
+
+.twitter-button:hover::after {
+    opacity: 1; /* Show the text on hover */
 }
 
 /* Responsiveness for mobile screen (Mobile Phones) */
