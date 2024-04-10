@@ -1,0 +1,1402 @@
+
+* {
+    text-decoration: none;
+  }
+
+/*For loading screen */
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure it appears above other content */
+}
+
+.loading-content {
+    text-align: center;
+    font-size: 30px;
+    animation: flash 1s infinite alternate; /* Flashing animation */
+}
+
+@keyframes flash {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Hide website content during loading */
+body {
+    overflow: hidden;
+}
+
+/* For nav-bar */
+
+.nav-bar{
+    position: relative; /* Stick the navigation bar */
+    top: 0; /* Align it to the top of the viewport */
+    width: 90%; /* Make it span the full width */
+    z-index: 1000; /* Ensure it appears above other content */
+    /* Remaining styles */
+    background-color: white;
+    padding-left: 80px;
+    padding-right: 80px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(255, 255, 255);
+    max-width: 1700px; /* Set a maximum width to prevent overflowing */
+    margin-left: auto; /* Align to the center horizontally */
+    margin-right: auto; /* Align to the center horizontally */
+}
+
+.nav-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul li:hover{
+    color: rgb(255, 136, 0);
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+    transition: 1000ms;
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+    text-decoration: underline;
+    text-decoration-color: aliceblue;
+    position: relative;
+    font-family: "Kode Mono", monospace;
+}
+
+/* For image-container */
+
+.image-container {
+    position: relative;
+    margin-top: 0px; /* Adjust margin to create space below the navigation bar */
+    margin-left: auto; /* Align to the center horizontally */
+    margin-right: auto; /* Align to the center horizontally */
+    width: 80%; /* Set width to a percentage for responsiveness */
+    max-width: 1200px; /* Set a maximum width to prevent overflowing */
+    padding-right: 40px; /* Shift the image towards the left */
+    /* Remaining styles */
+    height: 1000px;
+    border-radius: 10px;
+    opacity: 100%;
+    text-align: center; /* Center the content inside the container */
+    display: flex; /* Use flexbox to center vertically */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    flex-direction: column; /* Arrange content vertically */
+}
+
+.gears{
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    top: 5%;
+    left: -35%;
+    animation-name: float-in-top-position;
+    animation-duration: 7.5s;
+}
+
+.info-bg {
+    width: 1920px;
+    height: 1000px;
+    margin-left: 38px;
+    border-radius: 0px;
+    opacity: 100%;
+}
+
+.info-bg-photo{
+    position: absolute;
+    width: 700px;
+    height: 850px;
+    top: 15%;
+    right: -19%;
+}
+
+.info-bg-header {
+    position: absolute;
+    top: 13%; /* Adjust the top position */
+    transform: translateX(-50%);
+    color: #db8009;
+    padding: 10px 20px;
+    margin-left: 400px;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Kode Mono", monospace;
+    animation-duration: 5.9s;
+    animation-name: float-in-bottom-top;
+}
+
+.info-bg-name{
+    position: absolute;
+    top: 22%; /* Adjust the top position */
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    font-family: "Sawarabi Mincho", serif;
+    font-size: 65px;
+    font-weight: 400;
+    text-align: left;
+    margin-left: 200px;
+    animation-duration: 6.5s;
+    animation-name: float-in-bottom-top;
+    color: rgb(143, 199, 248);
+}
+
+.info-bg-info{
+    position: absolute;
+    top: 45%; /* Adjust the top position */
+    left: 28%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    margin-left: 35px;
+    font-size: 30px;
+    text-align: left;
+    font-family: "Exo 2", sans-serif;
+    animation-duration: 5.8s;
+    animation-name: float-in-bottom-top;
+    color: rgb(0, 255, 255);
+}
+
+@keyframes float-in-top-position {
+    from {
+        top: -50%; /* Move the element off the screen from the top */
+    }
+    to {
+        top: 5%; /* Move the element to its original position */
+    }
+}
+
+@keyframes float-in-bottom-top{
+
+    from{
+        margin-top: 50%;
+    }
+    to{
+        margin-top: 0%;
+    }
+
+}
+
+.LM-button{
+    position: absolute;
+    top: 79%; /* Adjust the top position */
+    left: 10%; /* Adjust the left position */
+    transform: translate(-50%, -50%);
+    color: aqua;
+    background-color: rgb(0, 4, 255);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    animation-duration: 5.6s;
+    animation-name: fade-in-left;
+}
+
+@keyframes fade-in-left{
+    from{
+        margin-left: 50%;
+    }
+    to{
+        margin-left: 0%;
+    }
+}
+
+.LM-button:hover{
+    background-position: left bottom;
+    background:rgb(19, 138, 207) ;
+    color: aliceblue;
+}
+
+.HM-button{
+    position: absolute;
+    top: 79%; /* Adjust the top position */
+    left: 28%; /* Adjust the left position */
+    transform: translate(-50%, -50%);
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-left: 10px;
+    border: 2px solid black;
+    border-color: #2196F3;
+    cursor: pointer;
+    transition: all .5s ease-out;
+    animation-duration: 6s;
+    animation-name: fade-in-right;
+    color: #0fbbff;
+}
+
+@keyframes fade-in-right{
+    from{
+        margin-left: 40%;
+    }
+    to{
+        margin-left: 0%;
+    }
+}
+
+.HM-button:hover {
+    background: #2196F3;
+    color: white;
+
+  }
+
+/* For contact-email */
+
+.contact-email{
+    position: relative;
+    margin-top: 100px; /* Adjust margin to create space below the navigation bar */
+    margin-left: auto; /* Align to the center horizontally */
+    margin-right: auto; /* Align to the center horizontally */
+    width: 80%; /* Set width to a percentage for responsiveness */
+    max-width: 1200px; /* Set a maximum width to prevent overflowing */
+    padding-right: 40px; /* Shift the image towards the left */
+    /* Remaining styles */
+    height: 400px;
+    opacity: 100%;
+}
+
+.contact-email-bg{
+    width: 1800px;
+    height: 400px;
+    opacity: 0.1%;
+    margin-left: -275px;
+}
+
+.slogan {
+    position: absolute;
+    left: 20%; /* Adjust left position */
+    top: 45%; /* Align the text to the vertical center */
+    transform: translateY(-50%); /* Center the text vertically */
+    width: 40%; /* Set width for responsiveness */
+    font-family: "Sawarabi Mincho", serif;
+    font-size: 25px;
+    color: rgb(5, 16, 26);
+    text-align: left; /* Align text to the left */
+    margin-left: -200px;  
+}
+
+.pera1{
+    font-family: "Exo 2", sans-serif;
+    font-size: 20px ;
+}
+
+.ask-que{
+    position: absolute;
+    right: 10%; /* Adjust right position */
+    top: 40%; /* Align the text to the vertical center */
+    transform: translateY(-50%); /* Center the text vertically */
+    width: 40%; /* Set width for responsiveness */
+    font-size: 25px;
+    font-family: "Sawarabi Mincho", serif;
+    color: rgb(30, 18, 18);
+    text-align: left; /* Align text to the right */
+    margin-right: -150px;
+}
+
+.email-head{
+    font-family: "Kode Mono", monospace;
+    font-size: 25px;
+}
+
+.e-mail{
+    font-size: 50px;
+    color: rgb(42, 37, 37);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* For services-container */
+
+.services-container{
+    position: relative;
+    margin-top: 80px; /* Adjust margin to create space below the navigation bar */
+    margin-left: auto; /* Align to the center horizontally */
+    margin-right: auto; /* Align to the center horizontally */
+    width: 80%; /* Set width to a percentage for responsiveness */
+    max-width: 1200px; /* Set a maximum width to prevent overflowing */
+    padding-right: 40px; /* Shift the image towards the left */
+    /* Remaining styles */
+    height: 800px;
+    border-radius: 10px;
+    opacity: 80%;
+    text-align: center; /* Center the content inside the container */
+    display: flex; /* Use flexbox to center vertically */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    flex-direction: column; /* Arrange content vertically */
+}
+
+.service-bg{
+    width: 1912px;
+    height: 1000px;
+    margin-left: 42px;
+    border-radius: 0px;
+    opacity: 40%;
+}
+
+.service-bg-text{
+    position: absolute; /* Position the text absolutely relative to the container */
+    top: 2%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    font-family: "Sawarabi Mincho", serif;
+    font-size: 60px;
+    text-align: left;
+    margin-left: -300px;
+}
+
+.service-buttons{
+    position: absolute;
+    top: 105%; /* Adjust top position */
+    left: 33%; /* Adjust left position */
+    transform: translate(-50%, -50%);
+    display: flex; /* Use flexbox to arrange buttons horizontally */
+    
+}
+
+.button-1{
+    position: relative;
+    top: 70%; /* Adjust the top position */
+    left: 35%; /* Adjust the left position */
+    transform: translate(-50%, -50%);
+    border: 2px solid orange; /* Add orange border */
+    border-width: 5px;
+    border-radius: 10px;
+    background-color: transparent; /* Set background to transparent */
+    overflow: hidden; /* Hide overflow */
+    width: 350px;
+    cursor: pointer;
+}
+
+.button-2{
+    position: relative;
+    top: 70%; /* Adjust the top position */
+    left: 43%; /* Adjust the left position */
+    transform: translate(-50%, -50%);
+    border: 2px solid orange; /* Add orange border */
+    border-width: 5px;
+    border-radius: 10px;
+    background-color: transparent; /* Set background to transparent */
+    overflow: hidden; /* Hide overflow */
+    width: 350px;
+    cursor: pointer;
+}
+
+.button-3{
+    position: relative;
+    top: 70%; /* Adjust the top position */
+    left: 51%; /* Adjust the left position */
+    transform: translate(-50%, -50%);
+    border: 2px solid orange; /* Add orange border */
+    border-width: 5px;
+    border-radius: 10px;
+    background-color: transparent; /* Set background to transparent */
+    overflow: hidden; /* Hide overflow */
+    width: 350px;
+    cursor: pointer;
+}
+
+.button-1::after, .button-2::after, .button-3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgb(255, 189, 7);
+    z-index: -1;
+}
+
+.button-1:hover::after, .button-2:hover::after, .button-3:hover::after {
+    animation: fillOrange .7s forwards; /* Start the animation only on hover */
+}
+
+@keyframes fillOrange{
+    from{
+        height: 0;
+    }
+    to{
+        height: 100%;
+    }
+}
+
+.button-1 img, .button-2 img {
+    margin-top: 50px;
+    padding-bottom: 35px;
+    width: 95px;
+    height: 70px;
+}
+
+.button-3 img{
+    margin-top: 50px;
+    padding-bottom: 35px;
+    width: 110px;
+    height: 100px;
+}
+
+.button-1 h3, .button-2 h3 {
+    font-size: 35px;
+    font-family: "Sawarabi Mincho", serif;
+}
+
+.button-3 h3{
+    font-size: 30px;
+    font-family: "Sawarabi Mincho", serif;
+}
+
+.button-1 p, .button-2 p, .button-3 p{
+    font-family: "Exo 2", sans-serif;
+    font-size: 25px;
+    padding-bottom: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* For contact-message */
+
+.contact-message{
+    position: relative;
+    margin-top: -60px; /* Adjust margin to create space below the navigation bar */
+    margin-left: auto; /* Align to the center horizontally */
+    margin-right: auto; /* Align to the center horizontally */
+    width: 80%; /* Set width to a percentage for responsiveness */
+    max-width: 1200px; /* Set a maximum width to prevent overflowing */
+    padding-right: 40px; /* Shift the image towards the left */
+    /* Remaining styles */
+    border-radius: 10px;
+    opacity: 80%;
+    text-align: center; /* Center the content inside the container */
+    display: flex; /* Use flexbox to center vertically */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    flex-direction: column; /* Arrange content vertically */
+}
+
+.contact-message img{
+    width: 1912px;
+    height: 500px;
+    margin-left: 44px;
+    border-radius: 10px;
+    margin-top: 300px;
+}
+
+.con-img-text{
+    position: absolute; /* Position the text absolutely relative to the container */
+    padding: 10px 20px;
+    font-family: "Sawarabi Mincho", serif;
+    font-size: 65px;
+    text-align: left;  
+    margin-left: -800px;
+    top: 58%;
+}
+
+.custom-dropdown {
+    position: absolute;
+    margin-right: 20px;
+    
+  }
+  
+.options {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    margin-top: -20px;
+    margin-left: 300px;
+    border-radius: 20px;
+    transition: background-color 0.6s ease;
+    height: 50px;
+}
+  
+.option {
+    width: 100%;
+    text-align: left;
+    padding: 8px 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-bottom: 5px;
+    transition: background-color 0.8s ease;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    color: white;
+    
+}
+
+.option img{
+    width: 30px;
+    height: 30px;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-right: 5px;
+
+}
+  
+.option:hover {
+    background-color: #00ff22;
+}
+  
+.prev-btn {
+    
+    cursor: pointer;
+    display: block;
+    margin-top: 300px;
+    transform: rotate(-90deg);
+    margin-left: 800px;
+    height: 100px;
+    width: 40px;
+    background-color: #2196F3;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: #db8009;
+    
+}
+
+.prev-btn:hover{
+    background: -webkit-radial-gradient(right, #2196F3, #db8009);
+}
+
+.next-btn {
+    cursor: pointer;
+    height: 100px;
+    width: 40px;
+    display: block;
+    transform: rotate(-90deg);
+    margin-left: 800px;
+    margin-bottom: -20px;
+    background-color: #2196F3;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: #db8009;
+}
+
+.next-btn:hover{
+    background: -webkit-radial-gradient(left, #2196F3, #db8009);
+}
+
+/* For Footer */
+
+.footer{
+    position: relative;
+    width: 1912px; /* Set the width to match the width of footer-bg */
+    height: auto; /* Let the height adjust proportionally */
+    margin-top: 304px; /* Adjust as needed to place it below the previous content */
+    margin-left: auto; /* Align to the center horizontally */
+    margin-right: auto; /* Align to the center horizontally */
+    display: flex; /* Use flexbox to center vertically */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+}
+
+.footer-bg{
+    position: absolute;
+    width: 1922px; /* Set the width to match the width of the container */
+    height: 600px; /* Let the height adjust proportionally */
+    opacity: 100%;
+    margin-left: -10px;
+}
+
+.footer-logo {
+    position: absolute;
+    left: 50%; /* Move to the center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    top: -280px; /* Adjust as needed */
+}
+
+.footer-text{
+    position: absolute;
+    left: 50%; /* Move to the center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    top: -210px; /* Adjust as needed */
+    text-align: center;
+}
+
+.footer-mail{
+    font-family: "Sawarabi Mincho", serif;
+    font-size: 40px;
+    background: linear-gradient(to right, #419ff7, 
+                    #f1a415); 
+            -webkit-text-fill-color: transparent; 
+            -webkit-background-clip: text; 
+}
+
+.footer-addr{
+    font-family: "Exo 2", sans-serif;
+    font-size: 25px;
+    color: #10b0f0;
+}
+
+.button-container{
+    position: absolute;
+    left: 5%;
+    top: 10px;
+    
+}
+
+.button-container button{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    padding-right: 48px;
+    background-color: #d1b159;
+    border-radius: 10px;
+    border: none;
+}
+
+.instagram{
+    width: 45px;
+    height: 45px;
+    margin-top: 2px;
+}
+
+.linkedin{
+    width: 45px;
+    height: 45px;
+    margin-top: 2px;
+}
+
+.facebook{
+    width: 45px;
+    height: 45px;
+}
+
+.twitter{
+    width: 45px;
+    height: 45px;
+    margin-top: 2px;
+}
+
+.instagram-button::after {
+    content: "Instagram"; /* Show text "Instagram" */
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 10px); /* Adjust distance from button as needed */
+    transform: translateY(-50%);
+    background-color: #e4b63a; /* Adjust opacity and color as needed */
+    padding: 5px 10px; /* Adjust as needed */
+    border-radius: 5px; /* Adjust as needed */
+    font-family: Arial, sans-serif; /* Adjust font family as needed */
+    font-size: 14px; /* Adjust font size as needed */
+    color: #333; /* Adjust text color as needed */
+    z-index: 1;
+    white-space: nowrap; /* Prevent text from wrapping */
+    font-family: "Sawarabi Mincho", serif;
+    font-weight: bold;
+    font-size: 22px;
+    color: #080707;
+    opacity: 0; /* Initially hide the text */
+    transition: opacity 0.5s ease; /* Smooth transition effect over 1 second */
+}
+
+.instagram-button:hover::after {
+    opacity: 1; /* Show the text on hover */
+}
+
+.linkedin-button::after {
+    content: "LinkedIn";
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 10px); /* Adjust distance from button as needed */
+    transform: translateY(-50%);
+    background-color: #e4b63a; /* Adjust opacity and color as needed */
+    padding: 5px 10px; /* Adjust as needed */
+    border-radius: 5px; /* Adjust as needed */
+    font-family: Arial, sans-serif; /* Adjust font family as needed */
+    font-size: 14px; /* Adjust font size as needed */
+    color: #333; /* Adjust text color as needed */
+    z-index: 1;
+    white-space: nowrap; /* Prevent text from wrapping */
+    font-family: "Sawarabi Mincho", serif;
+    font-weight: bold;
+    font-size: 22px;
+    color: #080707;
+    opacity: 0; /* Initially hide the text */
+    transition: opacity 0.5s ease; /* Smooth transition effect over 1 second */
+}
+
+.linkedin-button:hover::after {
+    opacity: 1; /* Show the text on hover */
+}
+
+.facebook-button::after {
+    content: "Facebook";
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 10px); /* Adjust distance from button as needed */
+    transform: translateY(-50%);
+    background-color: #e4b63a; /* Adjust opacity and color as needed */
+    padding: 5px 10px; /* Adjust as needed */
+    border-radius: 5px; /* Adjust as needed */
+    font-family: Arial, sans-serif; /* Adjust font family as needed */
+    font-size: 14px; /* Adjust font size as needed */
+    color: #333; /* Adjust text color as needed */
+    z-index: 1;
+    white-space: nowrap; /* Prevent text from wrapping */
+    font-family: "Sawarabi Mincho", serif;
+    font-weight: bold;
+    font-size: 22px;
+    color: #080707;
+    opacity: 0; /* Initially hide the text */
+    transition: opacity 0.5s ease; /* Smooth transition effect over 1 second */
+}
+
+.facebook-button:hover::after {
+    opacity: 1; /* Show the text on hover */
+}
+
+.twitter-button::after {
+    content: "Twitter";
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 10px); /* Adjust distance from button as needed */
+    transform: translateY(-50%);
+    background-color: #e4b63a; /* Adjust opacity and color as needed */
+    padding: 5px 10px; /* Adjust as needed */
+    border-radius: 5px; /* Adjust as needed */
+    font-family: Arial, sans-serif; /* Adjust font family as needed */
+    font-size: 14px; /* Adjust font size as needed */
+    color: #333; /* Adjust text color as needed */
+    z-index: 1;
+    white-space: nowrap; /* Prevent text from wrapping */
+    font-family: "Sawarabi Mincho", serif;
+    font-weight: bold;
+    font-size: 22px;
+    color: #080707;
+    opacity: 0; /* Initially hide the text */
+    transition: opacity 0.5s ease; /* Smooth transition effect over 1 second */
+}
+
+.twitter-button:hover::after {
+    opacity: 1; /* Show the text on hover */
+}
+
+/* Responsiveness for mobile screen (Mobile Phones) */
+
+@media screen and (max-width: 450px) {
+    /* For Nav Bar */
+    .nav-bar {
+        top: 0;
+        width: 100%;
+        padding-left: 25px;
+        padding-right: 20px;
+        font-size: 15px;
+        margin-left: -40px;
+        margin-right: 50px;
+    }
+
+    .nav-div {
+        display: flex;
+        flex-direction: column; /* Change to column for smaller screens */
+    }
+
+    li {
+        display: inline-block; /* Change to inline-block for horizontal alignment */
+        margin: 8px; /* Adjust margin for spacing */
+        text-decoration: underline;
+    }
+
+    ul{
+        align-items: center;
+        margin-right: 5px;
+        margin-left: -5px;
+    }
+
+    /* For info bg */
+
+    .info-bg {
+        width: 470px;
+        height: 400px;
+        margin-left: 48px;
+        opacity: 100%;
+        margin-top: -550px;
+    }
+    
+    .gears{
+        display: none;
+    }
+
+    .info-bg-photo{
+        position: absolute;
+        width: 200px;
+        height: 300px;
+        top: 12.5%;
+        right: -10%;
+    }
+
+    .info-bg-header {
+        top: 3%; /* Adjust the top position */
+        padding: 10px 20px;
+        margin-left: 120px;
+        font-size: 15px;
+        text-align: left;
+    } 
+
+    .info-bg-name{
+        top: 10%; /* Adjust the top position */
+        padding: 10px 20px;
+        font-size: 19px;
+        font-weight: 400;
+        margin-left: 60px;
+       
+    }
+
+    .info-bg-info{
+        top: 17%; /* Adjust the top position */
+        left: 28%;
+        margin-left: 2px;
+        font-size: 15px;
+        text-align: left;
+    
+    }
+
+    .LM-button{
+        top: 39%; /* Adjust the top position */
+        left: 12%; /* Adjust the left position */
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 15px;
+    }
+
+    .HM-button{
+        top: 39%; /* Adjust the top position */
+        left: 39%; /* Adjust the left position */
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 15px;
+      
+    }
+
+    /* for class contact-email */
+
+    .contact-email-bg{
+     width: 445px;
+    }
+
+    .slogan {
+        left: 50%; /* Adjust left position */
+        top: -500px; /* Align the text to the vertical center */
+        width: 390px; /* Set width for responsiveness */
+        font-size: 20px;
+        margin-left: -200px;
+    }
+
+    .pera1{
+        font-family: "Exo 2", sans-serif;
+        font-size: 15px ;
+    }
+
+    .ask-que{
+        left: -3%; /* Adjust right position */
+        top: -40%; /* Align the text to the vertical center */
+        width: 370px; /* Set width for responsiveness */
+        font-size: 20px;
+    }
+
+    .email-head{
+        font-size: 20px;
+    }
+
+    .e-mail{
+        font-size: 35px;
+    }
+
+    /* for Services */
+
+    .services-container{
+        margin-top: -0px; /* Adjust margin to create space below the navigation bar */
+        width: 365px; /* Set width to a percentage for responsiveness */
+        padding-right: 40px; /* Shift the image towards the left */
+        height: 2000px;
+    }
+
+    .service-buttons {
+        position: relative; /* Change position to relative */
+        top: auto; /* Reset top position */
+        left: auto; /* Reset left position */
+        transform: none; /* Reset transform */
+        flex-direction: column; /* Arrange buttons vertically */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .button-1, .button-2, .button-3 {
+        top: -750px; /* Reset top position */
+        left: 20px; /* Reset left position */
+        transform: none; /* Reset transform */
+        margin-bottom: 20px; /* Add margin between buttons */
+    }
+
+    .button-1 img, .button-2 img {
+        margin-top: 20px;
+        padding-bottom: 25px;
+        width: 55px;
+        height: 40px;
+    }
+
+    .button-3 img{
+        margin-top: 20px;
+        padding-bottom: 25px;
+        width: 55px;
+        height: 50px;
+    }
+
+    .button-1 h3, .button-2 h3 {
+        font-size: 15px;
+    }
+    .button-3 h3{
+        font-size: 15px;
+    }
+
+    .button-1 p, .button-2 p, .button-3 p{
+        font-size: 15px;
+        padding-bottom: 15px;
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+
+    .service-bg-text{
+        top: -250px;
+        font-size: 25px;
+        text-align: center;
+        margin-left: 290px;
+        width: 200px;
+    }
+
+    .service-bg{
+        width: 470px;
+        height: 1000px;
+        margin-left: 42px;
+        opacity: 40%;
+        margin-top: -900px;
+    }
+
+    /* for Contact Mesage */
+
+    .contact-message img{
+        width: 470px;
+        height: 600px;
+        margin-left: 44px;
+        border-radius: 10px;
+        margin-top: -1700px;
+    }
+
+    .con-img-text{
+        padding: 10px 20px;
+        font-size: 30px;
+        text-align: left;  
+        margin-left: 37px;
+        top: -1100px;
+    }
+
+    .options {
+        position: relative;
+        top: -15px;
+        left: -37%;
+        margin-top: 20px; /* Adjust as needed */
+        width: 195px;
+    }
+    
+    .option {
+        width: 200px;
+        text-align: left;
+        padding: 8px 0;
+        border: none;
+        background: none;
+        cursor: pointer;
+        margin-bottom: 5px;
+        font-family: "Kode Mono", monospace;
+        font-size: 30px;
+        color: rgb(253, 253, 253);
+    }
+    .option img{
+        width: 30px;
+        height: 30px;
+        margin-top: 0px;
+        margin-left: 0px;
+        padding-right: 5px;
+    }
+
+    .prev-btn {
+        margin-top: -900px;
+        margin-left: 390px;
+        height: 100px;
+        width: 40px;
+    }
+    
+    .next-btn {
+        margin-left: 390px;
+        margin-bottom: -20px;
+    }
+
+    /* for Footer */
+
+    .footer-bg{
+        width: 470px; /* Set the width to match the width of the container */
+        height: 610px; /* Let the height adjust proportionally */
+        opacity: 100%;
+        margin-left: -7px;
+        margin-top: -500px;
+    }
+
+    .footer-logo {
+        left: 50%; /* Move to the center horizontally */
+        top: 3200px; /* Adjust as needed */
+    }
+
+    .footer-text{
+        left: 48%; /* Move to the center horizontally */
+        top: 3280px; /* Adjust as needed */
+    }
+
+    .footer-mail{
+        font-size: 30px;
+        margin-left: 19px;
+    }
+
+    .footer-addr{
+        font-size: 19px;
+        margin-left: 19px;
+    }
+
+    .footer{
+        width: 455px; /* Set the width to match the width of footer-bg */
+    }
+}   
+
+/* Responsiveness for Tablet screen */
+
+@media screen and (max-width: 810px) and (min-width: 460px) {
+    /* For Nav Bar */
+    .nav-bar {
+        top: 0;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 15px;
+        margin-left: 0px;
+        margin-right: 50px;
+    }
+
+    .nav-div {
+        display: flex;
+        flex-direction: row; /* Change to column for smaller screens */
+    }
+
+    li {
+        display: inline-block; /* Change to inline-block for horizontal alignment */
+        margin: 8px; /* Adjust margin for spacing */
+        text-decoration: underline;
+    }
+
+    ul{
+        align-items: center;
+        margin-right: 5px;
+        margin-left: -5px;
+    }
+
+    /* For info bg */
+
+    .info-bg {
+        width: 875px;
+        height: 400px;
+        margin-left: 70px;
+        opacity: 100%;
+        margin-top: -550px;
+    }
+    
+    .gears{
+        position: absolute;
+        width: 170px;
+        height: 110px;
+        top: 5%;
+        left: -14%;
+        animation-name: float-in-top-position;
+        animation-duration: 7.5s;
+    }
+
+    .info-bg-photo{
+        position: absolute;
+        width: 250px;
+        height: 350px;
+        top: 7.5%;
+        right: -10%;
+    }
+
+    .info-bg-header {
+        top: 7%; /* Adjust the top position */
+        padding: 10px 20px;
+        margin-left: 267px;
+        font-size: 15px;
+        text-align: left;
+    } 
+
+    .info-bg-name{
+        top: 14%; /* Adjust the top position */
+        padding: 10px 20px;
+        font-size: 19px;
+        font-weight: 400;
+        margin-left: -80px;
+       
+    }
+
+    .info-bg-info{
+        top: 22%; /* Adjust the top position */
+        left: 36%;
+        margin-left: 2px;
+        font-size: 15px;
+        text-align: left;
+    
+    }
+
+    .LM-button{
+        top: 39%; /* Adjust the top position */
+        left: 18%; /* Adjust the left position */
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 15px;
+    }
+
+    .HM-button{
+        top: 39%; /* Adjust the top position */
+        left: 39%; /* Adjust the left position */
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 15px;
+      
+    }
+
+    /* for class contact-email */
+
+    .contact-email-bg{
+     width: 810px;
+    }
+
+    .slogan {
+        left: 30%; /* Adjust left position */
+        top: -500px; /* Align the text to the vertical center */
+        width: 690px; /* Set width for responsiveness */
+        font-size: 25px;
+        margin-left: -200px;
+    }
+
+    .pera1{
+        font-family: "Exo 2", sans-serif;
+        font-size: 20px ;
+    }
+
+    .ask-que{
+        left: 0%; /* Adjust right position */
+        top: -50%; /* Align the text to the vertical center */
+        width: 690px; /* Set width for responsiveness */
+        font-size: 20px;
+    }
+
+    .email-head{
+        font-size: 25px;
+    }
+
+    .e-mail{
+        font-size: 35px;
+    }
+
+    /* for Services */
+
+    .services-container{
+        margin-top: -10px; /* Adjust margin to create space below the navigation bar */
+        width: 840px; /* Set width to a percentage for responsiveness */
+        padding-right: 10px; /* Shift the image towards the left */
+        height: 2000px;
+    }
+
+    .service-buttons {
+        position: relative; /* Change position to relative */
+        top: auto; /* Reset top position */
+        left: auto; /* Reset left position */
+        transform: none; /* Reset transform */
+        flex-direction: column; /* Arrange buttons vertically */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .button-1, .button-2, .button-3 {
+        top: -900px; /* Reset top position */
+        left: 20px; /* Reset left position */
+        transform: none; /* Reset transform */
+        margin-bottom: 20px; /* Add margin between buttons */
+    }
+
+    .button-1 img, .button-2 img {
+        margin-top: 20px;
+        padding-bottom: 25px;
+        width: 75px;
+        height: 66px;
+    }
+
+    .button-3 img{
+        margin-top: 20px;
+        padding-bottom: 25px;
+        width: 75px;
+        height: 70px;
+    }
+
+    .button-1 h3, .button-2 h3 {
+        font-size: 25px;
+        margin-top: -15px;
+    }
+    .button-3 h3{
+        font-size: 25px;
+        margin-top: -15px;
+    }
+
+    .button-1 p, .button-2 p, .button-3 p{
+        font-size: 16px;
+        padding-bottom: 15px;
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+
+    .service-bg-text{
+        top: -400px;
+        font-size: 25px;
+        text-align: center;
+        margin-left: 290px;
+        width: 200px;
+    }
+
+    .service-bg{
+        width: 860px;
+        height: 1000px;
+        margin-left: 0px;
+        opacity: 40%;
+        margin-top: -900px;
+    }
+
+    /* for Contact Mesage */
+
+    .contact-message img{
+        width: 860px;
+        height: 600px;
+        margin-left: 69px;
+        border-radius: 0px;
+        margin-top: -1700px;
+    }
+
+    .con-img-text{
+        padding: 10px 20px;
+        font-size: 30px;
+        text-align: left;  
+        margin-left: 77px;
+        top: -1100px;
+    }
+
+    .options {
+        position: relative;
+        top: -15px;
+        left: -37%;
+        margin-top: 20px; /* Adjust as needed */
+        width: 195px;
+    }
+    
+    .option {
+        width: 200px;
+        text-align: left;
+        padding: 8px 0;
+        border: none;
+        background: none;
+        cursor: pointer;
+        margin-bottom: 5px;
+        font-family: "Kode Mono", monospace;
+        font-size: 30px;
+        color: rgb(253, 253, 253);
+    }
+    .option img{
+        width: 30px;
+        height: 30px;
+        margin-top: 0px;
+        margin-left: 0px;
+        padding-right: 5px;
+    }
+
+    .prev-btn {
+        margin-top: -900px;
+        margin-left: 420px;
+        height: 100px;
+        width: 40px;
+    }
+    
+    .next-btn {
+        margin-left: 420px;
+        margin-bottom: -20px;
+    }
+
+    /* for Footer */
+
+    .footer-bg{
+        width: 858px; /* Set the width to match the width of the container */
+        height: 610px; /* Let the height adjust proportionally */
+        opacity: 100%;
+        margin-left: -9px;
+        margin-top: -500px;
+    }
+
+    .footer-logo {
+        left: 50%; /* Move to the center horizontally */
+        top: 3200px; /* Adjust as needed */
+    }
+
+    .footer-text{
+        left: 48%; /* Move to the center horizontally */
+        top: 3280px; /* Adjust as needed */
+    }
+
+    .footer-mail{
+        font-size: 30px;
+        margin-left: 19px;
+    }
+
+    .footer-addr{
+        font-size: 19px;
+        margin-left: 19px;
+    }
+
+    .footer{
+        width: 850px; /* Set the width to match the width of footer-bg */
+    }
+}   

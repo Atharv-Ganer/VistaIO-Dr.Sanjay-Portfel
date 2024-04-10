@@ -1069,17 +1069,17 @@ li{
         height: 610px; /* Let the height adjust proportionally */
         opacity: 100%;
         margin-left: -7px;
-        margin-top: -500px;
+        margin-top: -900px;
     }
 
     .footer-logo {
         left: 50%; /* Move to the center horizontally */
-        top: 3200px; /* Adjust as needed */
+        top: -700px; /* Adjust as needed */
     }
 
     .footer-text{
         left: 48%; /* Move to the center horizontally */
-        top: 3280px; /* Adjust as needed */
+        top: -620px; /* Adjust as needed */
     }
 
     .footer-mail{
@@ -1094,6 +1094,10 @@ li{
 
     .footer{
         width: 455px; /* Set the width to match the width of footer-bg */
+    }
+    
+    .button-container{
+        top: -450px;
     }
 }   
 
