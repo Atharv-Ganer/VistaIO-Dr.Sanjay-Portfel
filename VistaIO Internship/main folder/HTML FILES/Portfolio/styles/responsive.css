@@ -417,6 +417,8 @@
 	}
 }
 
+/* 450px */
+
 @media screen and (max-width: 450px){
 	   /* for Footer */
 
@@ -657,6 +659,48 @@
 {
 	
 }
+
+/* 810px */
+@media screen and (max-width: 810px) and (min-width: 460px){
+	 /* for Footer */
+
+	 .footer-bg{
+        width: 858px; /* Set the width to match the width of the container */
+        height: 610px; /* Let the height adjust proportionally */
+        opacity: 100%;
+        margin-left: -9px;
+        margin-top: -800px;
+    }
+
+    .footer-logo {
+        left: 50%; /* Move to the center horizontally */
+        top: -650px; /* Adjust as needed */
+    }
+
+    .footer-text{
+        left: 48%; /* Move to the center horizontally */
+        top: -580px; /* Adjust as needed */
+    }
+
+    .footer-mail{
+        font-size: 30px;
+        margin-left: 19px;
+    }
+
+    .footer-addr{
+        font-size: 19px;
+        margin-left: 19px;
+    }
+
+    .footer{
+        width: 850px; /* Set the width to match the width of footer-bg */
+    }
+
+    .button-container{
+        top: -400px;
+    }
+}
+
 
 /************
 9. 768px
